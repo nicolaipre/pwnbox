@@ -1,5 +1,5 @@
 # pwnbox
-[![](https://github.com/nicolaipre/pwnbox/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/nicolaipre/pwnbox/actions)
+[![Build Status](https://github.com/nicolaipre/pwnbox/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/nicolaipre/pwnbox/actions) [![Docker Pulls](https://badgen.net/docker/pulls/nicolaipre/pwnbox?icon=docker&label=Pulls)](https://hub.docker.com/r/nicolaipre/pwnbox)
 
 Heavily based on (pretty much ripped) [pwndocker](https://github.com/skysider/pwndocker).
 
