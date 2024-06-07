@@ -1,0 +1,27 @@
+services:
+  pwn:
+    container_name: pwnbox
+    image: pwnbox
+    hostname: pwnbox
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile
+    security_opt:
+      - seccomp:unconfined
+    cap_add:
+      - SYS_PTRACE
+    networks:
+      - ctf
+    ports:
+      - "9100:9100"
+      - "9999:9999"
+      - "23946:23946"
+    volumes:
+      - /tmp/shared:/tmp/shared
+
+networks:
+  ctf:
+    name: ctf
+    external: true
